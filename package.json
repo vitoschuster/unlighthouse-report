@@ -1,0 +1,13 @@
+{
+  "name": "unlighthouse-report",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "unlighthouse-build": "unlighthouse-ci --build-static --output-path .unlighthouse/$(date +%Y-%m)",
+    "unlighthouse-serve": "sirv .unlighthouse/$(date +%Y-%m)"
+  },
+  "dependencies": {
+    "sirv-cli": "^2.0.2",
+    "unlighthouse": "^0.7.4"
+  }
+}
